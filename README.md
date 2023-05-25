@@ -6,7 +6,8 @@ used to search for files and directories. It searches through files and director
 Side note: The general syntax for "find" is
 find [options] [path...] [expression]
 
-**Command (-empty)**
+**Command (-type)**
+-type is used to search a specific type of document within a directory. 
 
 EX 1) 
 
@@ -15,93 +16,29 @@ Command
 find ./government -type d
  ``` 
 
-The "-type d" option in the "find" command is useful because it allows you to specifically search for directories. 
-By using this option, you can filter the search results to only include directories and exclude any other types of files. 
-The command above is used to find all diectories in "./technical".
+The "-type d" commands allows the user to find all the directories within a directory. 
 
 Output
-``` 
-``` 
+![Image](typeDlab3.png)
 
-Source
-ChatGPT
-
-**Command Option 2 (-find)**
-
-The -size option is used to search for files that match a specific size in bytes. This can be useful when you are looking for files of a specific size, such as very large or very small files.
-
-Example 1 
+EX 2) 
 
 Command
 ``` 
-find ./technical -size -500c
-
- ``` 
-The find command above is uszed to find all files that are less than 500 bytes in "./technical".
-Output
-
-
-
-Example 2
-
-Command
-
-``` 
-find ./technical -size +500c
-``` 
-The find command above is uszed to find all files that are more than 500 bytes in "./technical".
-
-Output
-``` 
-
-``` 
-Source
-ChatGPT
-
-**Command (-size)**
-The "find" command with the "-name" option allows you to search for files and directories based on their names or patterns. 
-It is particularly useful when you want to locate files that match a specific name or pattern within a directory hierarchy. 
-
-Example 1 
-
-Command
-``` 
-find technical/ -name 'preface.txt'
-
+find ./Post_Rate_comm -type f
  ``` 
 
-The find command above used to find a file with the specicic name 'preface.txt'.
-This command is useful when trying to find a a specific file.
-Output
-``` 
-preface.txt
-``` 
-
-
-Example 2
-
-Command
-
-``` 
-find technical/ -name 'chapter-1.txt'
-
-``` 
-
-The find command above used to find a file with the specicic name 'chapter-1.txt'. 
-This is usefull when trying to find a specific name in a directory with many files.
-
+The "-type f" command allows the user to find all of the files within a directory. 
 
 Output
-``` 
-chapter-1.txt
-``` 
+![Image](typeFlab3.png)
+
 Source
 ChatGPT
-**Command (-name)**
 
-The "find . -type  -empty" command is useful for locating empty directories within a directory hierarchy. 
-It helps you efficiently manage disk space, maintain an organized file system, automate cleanup tasks, 
-and troubleshoot potential issues related to empty directories.
+**Command Option 2 (-empty)**
+
+-empty is used to help the user find empty files/directories
 
 Example 1 
 
@@ -109,30 +46,89 @@ Command
 ``` 
 find . -type d -empty
 
+ ```
+ Output
+![Image](emptyDLab3.png)
+ 
+The ". -type d - empty" command allows the user to find all the empty directories within the CSE15L directory. 
+
+
+
+Example 2
+
+
+Command
+``` 
+find . -type f -empty
+
+ ```
+ Output
+![Image](emptyFLab3.png)
+
+The ". -type F - empty" command allows the user to find all the empty files within the CSE15L directory. 
+
+Source
+ChatGPT
+
+**Command (-size)**
+
+-size is used to search for files that match a specific size in bytes.
+
+Example 1 
+
+Command
+``` 
+find ./government -size -500c'
+
  ``` 
 
-The find command above used to find an empty directory.
-If you are trying to find an empty direcory to use, this command is a good first step.
+Output
+![Image](size--.png)
+
+The "-size -500c" command allowed the user to find the all files what are smaller than 500 bytes. 
+
+Example 2
+Command
+``` 
+find ./government -size +500c'
+
+ ``` 
 
 Output
+![Image](size++.png)
+
+The "-size +500c" command allowed the user to find the all files what are larger than 500 bytes. 
+
+Source
+ChatGPT
+**Command (-name)**
+
+-name -"string"  allows you to search for files and directories based on their names or patterns. 
+
+Example 1 
+
+Command
 ``` 
-./.git/objects/info
-./.git/refs/tags
-``` 
+find media/* -name 'Annual_fee.txt'
+
+ ``` 
+Output
+![Image](specNamelab3.png)
+
+The "-name 'Annual_fee.txt'" allowed the user to find exact file within the directory media.
 
 
 Example 2
 
 Command
-
 ``` 
-find . -type f -empty
+find Post_Rate_Comm/* -name 'Cohenetal_comparison.txt'
 
-``` 
-The find command above used to find an empty files.
-If you are trying to find an empty file to use or delete this find command could be usefull.
-
+ ``` 
 Output
-``` 
-no ouput
-``` 
+![Image](nameComLab3.png)
+
+The "-name 'Cohenetal_comparison.txt'" allowed the user to find exact file within the directory media.
+
+Source
+ChatGPT
