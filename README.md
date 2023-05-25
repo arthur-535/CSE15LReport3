@@ -34,8 +34,9 @@ The "-type f" command allows the user to find all of the files within a director
 Output
 ![Image](typeFlab3.png)
 
-Source
-ChatGPT
+
+Source: ChatGPT
+
 
 **Command Option 2 (-empty)**
 
@@ -70,8 +71,9 @@ find . -type f -empty
 
 The ". -type F - empty" command allows the user to find all the empty files within the CSE15L directory. 
 
-Source
-ChatGPT
+
+Source: ChatGPT
+
 
 **Command (-size)**
 
@@ -104,8 +106,10 @@ Output
 
 The "-size +500c" command allowed the user to find the all files what are larger than 500 bytes. 
 
-Source
-ChatGPT
+
+Source: ChatGPT
+
+
 **Command (-name)**
 
 -name -"string"  allows you to search for files and directories based on their names or patterns. 
@@ -136,5 +140,6 @@ Output
 
 The "-name 'Cohenetal_comparison.txt'" allowed the user to find exact file within the directory media.
 
-Source
-ChatGPT
+
+Source: ChatGPT
+
