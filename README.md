@@ -83,7 +83,7 @@ find ./government -size -500c'
  ``` 
 
 Output
-![Image](size--.png)
+![Image](size--lab3.png)
 
 The "-size -500c" command allowed the user to find the all files what are smaller than 500 bytes. 
 
@@ -95,7 +95,7 @@ find ./government -size +500c'
  ``` 
 
 Output
-![Image](size++.png)
+![Image](size++lab3.png)
 
 The "-size +500c" command allowed the user to find the all files what are larger than 500 bytes. 
 
