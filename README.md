@@ -19,6 +19,7 @@ find ./government -type d
 The "-type d" commands allows the user to find all the directories within a directory. 
 
 Output
+
 ![Image](typeDlab3.png)
 
 EX 2) 
@@ -48,6 +49,7 @@ find . -type d -empty
 
  ```
  Output
+ 
 ![Image](emptyDLab3.png)
  
 The ". -type d - empty" command allows the user to find all the empty directories within the CSE15L directory. 
@@ -63,6 +65,7 @@ find . -type f -empty
 
  ```
  Output
+ 
 ![Image](emptyFLab3.png)
 
 The ". -type F - empty" command allows the user to find all the empty files within the CSE15L directory. 
@@ -83,6 +86,7 @@ find ./government -size -500c'
  ``` 
 
 Output
+
 ![Image](size--lab3.png)
 
 The "-size -500c" command allowed the user to find the all files what are smaller than 500 bytes. 
@@ -95,6 +99,7 @@ find ./government -size +500c'
  ``` 
 
 Output
+
 ![Image](size+lab3.png)
 
 The "-size +500c" command allowed the user to find the all files what are larger than 500 bytes. 
@@ -113,6 +118,7 @@ find media/* -name 'Annual_fee.txt'
 
  ``` 
 Output
+
 ![Image](specNamelab3.png)
 
 The "-name 'Annual_fee.txt'" allowed the user to find exact file within the directory media.
